@@ -1,0 +1,18 @@
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#747704;
+    font-weight:400;
+}
+.text-muted{
+    color:#BCBBBB;
+}
+.text-thin{
+    font-weight:300;
+}
+.title-super{
+    font-size:40px;
+}
+.title-logo{
+    margin-top:20px;
+}
