@@ -1,0 +1,42 @@
+body {
+    display: block;
+    margin: 800px;
+    margin-top: 200px;
+    margin-right: 400px;
+    margin-bottom: 200px;
+    margin-left: 200px;
+}
+
+
+
+.description{
+    color:#9e9e9e;
+    max-width: 705px;
+}
+.screenshot{
+    max-width: 460px;
+}
+* {
+   outline: 1px solid white !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.app {
+    display: -webkit-flex;
+    display: flex;
+}
+h1{
+    background-color:#009688;
+    color:white;
+}
+
+
+.image{
+    margin-right:80px;
+}
