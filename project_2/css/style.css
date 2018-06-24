@@ -1,0 +1,58 @@
+body {
+  color: #878787;
+  margin: 0;
+  border: 10px dotted lightblue;
+}
+
+
+.main-header {
+  background-color: orange;
+   text-align:center;
+  text-shadow: 2px 2px #4682B4;
+}
+header span {
+  color: white;
+  font-size: 30px;
+   
+ }
+h1 {
+  font-size: 90px;
+  color: white;
+}
+h2 {
+  font-size: 53px;
+}
+h3 {
+  font-size: 20px;
+  color: #48525c;
+}
+
+.primary-content {
+   
+    /*border-left: 10px dotted red;
+    border-bottom: 10px dotted red;*/
+    text-align: center;
+}
+.secondary-content {
+  color: violet;
+  background-color: #4682B4;
+ 
+}
+.t-border {
+   border-top: 2px groove  blue;
+}
+#main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: solid 10px orange; 
+  
+}
+.rounded {
+  border-radius: 25px;
+}
+ul li {
+  color: tomato;
+}
+ol li {
+  color: tomato;
+}
