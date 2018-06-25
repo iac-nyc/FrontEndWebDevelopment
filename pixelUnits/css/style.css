@@ -1,0 +1,104 @@
+/* Type Selectors ------------------ */
+
+body {
+  color: #878787;
+  margin: 0;
+  /*
+  font-size: 1em; /* 16px
+  
+  font-family: "Helvetica Neue",Halvetica, Arial, sans-serif;*/
+  /* font-stack  
+  line-height: 1.5; */
+  
+  font: normal 1em/1.5 "Helvetica Neue",Halvetica, Arial, sans-serif;
+}
+
+h1 {  
+  font-size: 5.625em; /*  90px/16px  */
+  color: rgba(255,255,255,0.4);
+ /* text-transform: uppercase; */
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 53px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #48525c;
+}
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: orange;
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightblue;
+}
+
+a:hover {
+  color: forestgreen;
+}
+
+a:active {
+  color: lightcoral;
+}
+
+/* ID Selectors -------------------- */
+
+#main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: solid 10px orange;
+  text-align: center;
+}
+
+/* Class Selectors ----------------- */
+
+.main-header {
+  background-color: orange;
+  text-align: center;
+ }
+
+.title {
+  color: white;
+  font-size: 1.625em; /* 26px/16px */
+}
+.main-header,
+.primary-content,
+.secondary-content,
+#main-footer {
+
+  width: 80%;
+  margin-left: 10%;
+}
+.primary-content {
+  text-align: center;
+}
+
+.t-border {
+  border-top: 2px solid lightgrey; /* Top border styles */
+}
+
+ol li{
+  color: tomato;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
