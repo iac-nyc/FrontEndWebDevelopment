@@ -1,0 +1,92 @@
+/* =========================================================== 
+   Practice CSS Floats
+============================================================== */
+
+/* 
+  Apply a float to <li> tags inside <nav>.
+  Make sure the floats follow the HTML source order.
+*/
+
+nav li {
+
+  float: left;
+  padding: 10px 22px;
+ 
+ 
+
+}
+
+
+/* 
+  Float '.img-featured' so that content flows around its left side. 
+  Apply a 15 pixel margin to the top, bottom and left sides.
+*/
+.img-featured {
+  float: right;
+  margin: 15px 0 15px 15px;
+}
+
+
+
+
+/* 
+  Float '.img-article' so that content flows around its right side.
+  Apply a 20 pixel right margin.    
+*/
+.img-article {
+  float: left;
+  margin: 20px;
+}
+
+
+
+
+
+/*  
+u  Float '.article-content' so that it's positioned next to '.img-article'.
+  Adjust the width of '.article-content' so that both elements are laid out side by side.
+
+.article-content {
+  float: right;
+  width: 78%;
+}
+
+*/
+.img-article,
+.article-content {
+  overflow: auto;
+
+}
+
+
+
+/* 
+   The floats collapsed the height of the 'article' containers.
+   Clear -- or open up -- the collapsed space around floated elements.
+*/
+
+.group::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* 
+  Center the navigation inside the header. 
+*/
+header {  
+  text-align: center;  
+  
+}
+nav {    
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
