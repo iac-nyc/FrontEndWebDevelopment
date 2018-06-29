@@ -1,0 +1,93 @@
+/**************************
+BASE STYLES
+**************************/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+  background: #95a5a6;
+}
+
+p {
+  margin-top: 0;
+}
+
+
+
+/**************************
+HELPER CLASSES
+**************************/
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.content-block {
+  padding: 1em;
+  background: #ecf0f1;
+}
+
+
+
+/**************************
+PROFILE LAYOUT
+**************************/
+
+.profile-name {
+  text-align: center;
+  color: #333;
+  font-size: 4em;
+}
+
+.banner-image {
+  min-width: 100%;
+}
+
+.profile-image {
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/**************************
+MEDIA QUERIES
+**************************/
+
+@media screen and (min-width: 30em) {
+  .profile-image {
+    float: left;
+    width: 256px;
+    margin-right: 1em;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .banner-image {
+    margin: 2em auto;
+  }
+  
+  .content-block, .banner-image {
+    border-radius: 3px;
+    box-shadow: 0px 1px 0px rgba(52, 73, 94, 0.2);
+  }
+  
+}
