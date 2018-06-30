@@ -1,0 +1,228 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+
+<meta charset="utf-8">
+<title>Dating Website</title> 
+<meta name ="author" content = "Iftekhar Ahmad Chowdhury"> 
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/dating.css">
+     
+
+
+</head> 
+
+<body> 
+
+
+
+<form action ="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" 
+
+enctype ="multipart/form-data" method = "post"> 
+
+
+
+
+
+<h1>Please Enter Your Details For Our Dating Website !</h1> 
+
+<fieldset> 
+
+<legend>Your Face </legend> 
+
+
+
+<label for ="fileupload" >Your image:</label> 
+
+<input type ="file" id ="fileupload" name ="fieluplaoad"> 
+
+<br> 
+
+<label for = "preview" >Image Preview:</label> 
+
+<img id= "preview" > 
+
+
+
+</fieldset> 
+
+
+
+<fieldset> 
+
+<legend>Your General Details:</legend> 
+
+<label for = "name">Name:</label> 
+
+<input type ="text" id="name" name ="name" 
+
+placeholder ="Your full name" required><br> 
+
+
+
+<label for = "gender">Gender:</label> 
+
+<input type ="radio" id ="gender" name="gender" value ="male" required> 
+
+<label for = "male" class="auto">Male</label> 
+
+
+
+<input type ="radio" id = "gender" name ="gender" value="female" required> 
+
+<label for = "female" class ="auto">Female</label><br> 
+
+
+
+<label for = "age">Age:</label> 
+
+<input type ="number" id="age" name ="age" 
+
+placeholder ="18" required> 
+
+<br> 
+
+
+
+<label for = "birthday">Date of Birth:</label> 
+
+<input type ="date" id="birthday" name ="birthday"> 
+
+<br> 
+
+
+
+<label for = "color">Favorite Color:</label> 
+
+<input type ="color" id="color" name ="color"> 
+
+<br> 
+
+
+
+<label for = "country">Which Country:</label> 
+
+<select name="country"> 
+
+<option value ="noselection"></option> 
+
+<option value="bangladesh">Bangladesh</option> 
+
+<option value="china">China</option> 
+
+<option value="russia">Russia</option> 
+
+<option value="usa">USA</option> 
+
+<option value="venezuela">Venezuela</option> 
+
+</select> 
+
+
+
+</fieldset> 
+
+
+
+<fieldset> 
+
+<legend>Your Indicators</legend> 
+
+<label for = "height">Height:</label> 
+
+<span class="red">Short</span> 
+
+<input type ="range" id="height" name ="height" 
+
+min ="0" max ="100"> 
+
+<span class="purple">Tall</span> 
+
+<br> 
+
+
+
+<label for = "salary" >Salary:</label> 
+
+<span class="red">Poor</span> 
+
+<input type ="range" id="salary" name ="salary" 
+
+min ="0" max ="100"> 
+
+<span class="purple">Rich</span> 
+
+<br> 
+
+</fieldset> 
+
+
+
+<fieldset> 
+
+<legend>Your Contact Information</legend> 
+
+<label for = "email" >Email:</label> 
+
+<input type = "email" id = "email" name= "email" required > 
+
+<br> 
+
+<label for ="mobile">Mobile:</label> 
+
+<input type="tel" id ="mobile" name = "mobile"> 
+
+<br> 
+
+<label for ="address">Address:</label> 
+
+<textarea id = "address" name= "address" ></textarea> 
+
+<br> 
+
+<label for="contact">Method to Contact you:</label> 
+
+
+
+<input type = "checkbox" id="emailcontact" name = "emailcontact" value="email"> 
+
+<label for="emailcontact" class="auto">Email</label> 
+
+
+
+<input type ="checkbox" id="whatsapp" name = "whatsapp" value="whatsapp"> 
+
+<label for="whatsapp" class="auto">Whatsapp</label> 
+
+
+
+<input type ="checkbox" id="chatcontact" name ="chatcontact" value="chat"> 
+
+<label for="chatcontact" class="auto">In-app chat</label> 
+
+<br> 
+
+</fieldset> 
+
+
+
+<input type="submit" value="Submit" > 
+
+</form> 
+
+<script> 
+    window.onload = function() {
+    var files = document.querySelectorAll("input[type=file]");
+    files[0].addEventListener("change", function(e) {
+        if(this.files && this.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) { document.getElementById("preview").setAttribute("src", e.target.result); }
+            reader.readAsDataURL(this.files[0]);
+        }
+    });
+    }
+ </script> 
+
+</body> 
+
+</html>

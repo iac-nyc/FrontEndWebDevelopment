@@ -1,0 +1,53 @@
+/*
+Author: Iftekhar Ahmad Chowdhury
+version: 0.0.1;
+
+
+*/ 
+            
+   form {
+          max-width: 800px;
+          margin: 10px auto;
+          padding: 10px 20px;
+          background: #3acec2;
+          border-radius: 8px;
+        }
+        
+  fieldset{
+            border:10px solid yellow;
+            padding:15px; 
+            margin-bottom:10px;
+            width:720px;
+            background:lightyellow
+         }
+    
+    
+  label{
+            width:180px;
+            display:inline-block; 
+            text-align:right;
+            vertical-align:top;
+         } 
+ textarea{
+            width:360px;
+            height:50px;
+        } 
+ .auto{
+            width:auto
+          } 
+ .red{
+            text-align:center;
+            background:darkred;
+            color:white
+            } 
+ .purple{
+            text-align:center;
+            background:purple; 
+            color:white
+            } 
+ label:hover{
+            font-size:20px
+            } 
+ input:hover{
+            font-size:20px
+            } 
