@@ -1,0 +1,93 @@
+/* Pseudo-elements -------------------------------- */
+
+.intro::first-line {
+  font-weight: bold;
+  font-size: 1.4em;
+
+}
+
+.intro::first-letter {
+
+  float: left;
+  font-size: 90px;
+  color: white;
+  background: #394047;
+  padding: 5px 10px;
+  margin: 10px 10px 0 0;
+  border-radius: 5px;
+  line-height: 1;
+  
+}
+
+/*
+.jpg::before {
+  content: "JPG - ";
+  font-size: .75em;
+
+}
+*/
+.jpg::before {
+  content:url('../img/icn-picture.svg');
+  margin-right: 10px;
+
+}
+/*
+.zip::before {
+
+  content: "ZIP - ";
+  font-size: .75em;
+}
+*/
+.zip::before{
+  content:url('../img/icn-zip.svg');
+  margin-right: 10px;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  display:inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: coral;
+  margin: 0 10px; 
+    
+}
+
+
+.d-loads a::after {
+
+  content: attr(title);
+  display:inline-block;
+  color: initial;
+  font-size: .65em;
+  margin-left: 5px;
+}
+.d-loads a {
+  border: solid 2px red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
