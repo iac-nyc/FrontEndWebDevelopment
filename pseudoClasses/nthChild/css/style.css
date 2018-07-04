@@ -1,0 +1,23 @@
+/* :nth-child Pseudo-classes------------------ */
+
+li:nth-child(even){
+
+  background: #25bab1;
+  color: steelblue;
+}
+li:nth-child(odd){
+
+  background: #52baf9;
+  color: red;
+}
+li:nth-child(7){
+
+  background: #b9fac9;
+  color: red;
+}
+li:nth-child(3n+4){
+  background:red;
+}
+li:nth-child(-n+2){
+  background:forestgreen;
+}
