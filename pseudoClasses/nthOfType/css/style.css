@@ -1,0 +1,10 @@
+/* Structural Pseudo-classes------------------ */
+
+div:nth-of-type(4) {
+  background: #52bab3;
+  color: white;
+}
+div:nth-last-of-type(2) {
+  background: #52bab3;
+  color: white;
+}
