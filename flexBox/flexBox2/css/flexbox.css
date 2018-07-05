@@ -1,0 +1,35 @@
+/* ================================= 
+  Flexbox
+==================================== */
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+/*  flex-direction: column;*/
+  
+}
+.item-3 {
+  order: 1;
+
+}
+.item-6 {
+
+  order: 2;
+}
+.item-2 {
+
+  order: -1;
+}
+.item-5 {
+  order: -2;
+
+}
+.item {
+
+  flex-grow: 1;
+}
+.item-1 {
+
+  flex-grow: 5;
+}
