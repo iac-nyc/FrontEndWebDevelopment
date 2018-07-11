@@ -1,0 +1,36 @@
+/* ===================================== 
+   Grid Layout
+======================================== */
+
+.grid {
+  max-width: 800px;
+  background-color:red;
+  display: grid;
+/*
+   grid-template-columns: 20% 40% 15%;
+  grid-template-columns:2fr repeat(2, 1fr);
+  grid-template-columns: minmax(200px, 300px) 1fr 1fr;
+
+  grid-template-columns: repeat(3,minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, 200px);
+  */
+  
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  grid-template-rows: 100px 150px;
+  
+  
+/*
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+*/
+  grid-gap: 20px;
+/*
+  
+  grid-auto-rows: minmaxS(250px auto);
+*/
+  grid-auto-columns: 100px;
+  grid-auto-flow: row;
+}
+
+
+
