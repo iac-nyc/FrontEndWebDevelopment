@@ -1,0 +1,100 @@
+/* ===================================== 
+   Grid Layout
+======================================== */
+
+.container {
+  height:100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+/*  grid-template-rows: 100px 100px minmax(200px, 1fr) 100px  ;*/
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 10px;
+  grid-template-areas: 
+    
+    "header" 
+    "nav"
+    "main" 
+    "aside"
+    "footer";
+  
+}
+nav {
+  grid-area: nav;
+}
+
+header {
+
+/*
+  grid-column-start: 1;
+  grid-column-end: -1;
+  
+  grid-column: 1/-1;
+*/
+  
+  grid-area: header;
+  
+}
+
+main  {
+/*
+   grid-row-start: 2;
+   grid-row-end: 3;
+  
+  grid-row: 2 /3;
+*/
+  grid-area: main;
+}
+
+aside {
+/*
+  grid-row-start: 2;
+  grid-row-end: -1;
+*/
+  grid-area: aside;
+}
+
+footer {
+/*
+  grid-row-start: -3;
+  grid-row-end: -1;
+*/
+  grid-area: footer;
+
+}
+
+@media (min-width: 768px){
+  .container {
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 100px minmax(150px, auto) 100px 100px 75px;
+  grid-template-areas:
+    "header header header"
+    "nav . main"
+    "nav aside ."
+    "nav aside ."
+    "footer footer footer"
+
+
+}
+
+
+}
+
+@media (min-width: 992px){
+  .container {
+    grid-template-areas: 
+      "header header header"
+    "nav . main"
+    "nav aside ."
+    "nav aside ."
+    "footer footer footer"
+
+}
+
+
+}
+
+
+
+
+
+
